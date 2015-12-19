@@ -706,7 +706,7 @@ all: binary
 
 ## clean       : clean up all temporary / machine-generated files
 clean:
-	rm -f $(TARGET_BIN) $(TARGET_HEX) $(TARGET_ELF) $(TARGET_OBJS) $(TARGET_MAP)
+	##rm -f $(TARGET_BIN) $(TARGET_HEX) $(TARGET_ELF) $(TARGET_OBJS) $(TARGET_MAP)
 	rm -rf $(OBJECT_DIR)/$(TARGET)
 	cd src/test && $(MAKE) clean || true
 
